@@ -1,5 +1,4 @@
-
-\\1-大数加法
+1-大数加法
 Key code:
 
 #define U 40000
@@ -40,7 +39,7 @@ if(flagx&&flagy)  printf("0\n");
 }
 
 
-\\2-大数减法
+2-大数减法
 string sub(string a,string b)
 {
     string c;
@@ -74,8 +73,7 @@ string sub(string a,string b)
 }
 
 
-
-\\3-1.大数乘法
+3-1.大数乘法
 
 #define U 10000
 string bigmul(string a,string b){
@@ -135,7 +133,7 @@ int main(){
 	return 0;
 }
 
-\\3-2.大数乘法（大数x整数）
+3-2.大数乘法（大数x整数）
 Key code:
 
 string mulint(string s,int x)  
