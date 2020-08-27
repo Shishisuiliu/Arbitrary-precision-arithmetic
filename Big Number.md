@@ -1,4 +1,4 @@
-#大数加法  
+# 大数加法  
 
 	#define U 40000
 	using namespace std;
@@ -38,7 +38,7 @@
 	}
 
 
-#大数减法  
+# 大数减法  
 
 	string sub(string a,string b)
 	{
@@ -73,7 +73,7 @@
 	}
 
 
-#.大数乘法
+# 大数乘法
 
   （1）大数乘法（大数x整数）   
 
@@ -160,7 +160,7 @@ Key code:
 	}
 
 
-#大数除法  
+# 大数除法  
 
 	string div(string s,int x) 
 	{
@@ -180,4 +180,18 @@ Key code:
 		}
 	    }
 	    return ans;
+	}
+
+# A%B
+
+        string a;
+	int b;
+	while(cin>>a>>b)
+	{
+		int ans=0;
+		for(int i=0;i<a.length();i++)
+		{
+			ans=(ans*10+a[i]-'0')%b;
+		}
+		cout<<ans<<endl;
 	}
