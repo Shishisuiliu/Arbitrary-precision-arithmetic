@@ -7,7 +7,7 @@
 	else return n*factorial(n - 1); 
 	}
 
-# Version1   
+# Version1   能用
 	_________________________________________________
 	int a[40000],n,w=1;     //用数组储存阶乘后的数 
 	void factorial(int k){
@@ -38,7 +38,7 @@
 	}
 	_____________________________________________________
   
-# version2   
+# version2   模板
 	_____________________________________________________
 	#define U 10000
 	int num[U+10];
@@ -74,21 +74,20 @@
 	
 # Java版
 
-	import java.math.BigInteger;
-	import java.util.Scanner;
-        public class Main {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sca=new Scanner(System.in);
-		BigInteger res[]=new BigInteger[10000+10];
-		res[0]=BigInteger.ONE;
-		for(int i=1;i<10000+1;i++){
-			res[i]=res[i-1].multiply(BigInteger.valueOf(i));
-		}
-		while(sca.hasNext()){
-			int x=sca.nextInt();
-			System.out.println(res[x]);
-		}
-	}
-    }
+	import java.util.*; 
+	import java.math.*; 
+	public class Main {   
+	public static void main(String[] args) { 
+	Scanner s=new Scanner (System.in); 
+	int n; 
+	BigInteger m;   
+	while(s.hasNext()) { 
+	n=s.nextInt(); 
+	m=BigInteger.ONE; 
+	for(int i=1;i<=n;i++) 
+	  m=m.multiply(BigInteger.valueOf(i)); 
+	System.out.println(m); 
+	} 
+	} 
+	} 
 
