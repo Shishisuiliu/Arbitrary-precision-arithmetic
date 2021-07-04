@@ -1,46 +1,5 @@
- # 大数乘法
+# 四则运算
 
-        import java.util.Scanner;
-        import java.math.BigInteger;
-
-        public class Main {
-            public static void main(String args[]){
-                Scanner cin=new Scanner(System.in);
-                while(cin.hasNext()) {
-                    BigInteger a=cin.nextBigInteger();
-                    BigInteger b=cin.nextBigInteger();
-                    BigInteger c=new BigInteger("0");
-                    c=a.multiply(b);
-                    System.out.println(c);
-                }
-            }
-        }
-        
-        
-  # 大数加法
-    
-        import java.util.Scanner;
-        import java.math.*;
-
-        public class Main
-        {
-            public static void main(String[] args)
-            {
-                Scanner cin = new Scanner(System.in);
-                int n;
-                n=cin.nextInt();
-                while(n!=0)
-                {
-                    BigInteger num1,num2;
-                    num1=cin.nextBigInteger();
-                    num2=cin.nextBigInteger();
-                    System.out.println(num1.add(num2));
-                    n--;
-                }
-            }
-        }
-        
-   # 四则运算
           public class Main{
           public static void main(String []args)
           {
@@ -72,3 +31,27 @@
           }
            }
         }
+        
+#Java实用大数模板
+
+       import java.util.*;
+       import java.math.*;
+       public class Main{
+               public static void main(String args[]){
+                       Scanner cin = new Scanner(System.in);
+                       BigInteger a,b;
+                       while (cin.hasNext()){
+                               a = cin.nextBigInteger();
+                               b = cin.nextBigInteger();
+                               System.out.println(a.add(b));//加
+                               System.out.println(a.subtract(b));//减
+                               System.out.println(a.multiply(b));//乘
+                               System.out.println(a.divide(b));//除
+                               System.out.println(a.remainder(b));//取模
+                               if( a.compareTo(b) == 0 ) System.out.println("a == b");//判断大小
+                               else if( a.compareTo(b) > 0 ) System.out.println("a > b");
+                               else if( a.compareTo(b) < 0 ) System.out.println("a < b");
+                               System.out.println(a.abs());//绝对值
+                       }
+               }
+       }
